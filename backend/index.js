@@ -7,7 +7,7 @@ const port=3000;
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json());
 
-app.post("/home",(req,res)=>{
+app.get("/home",(req,res)=>{
     //any logic specific thing we can do here...
     console.log(req.body);
     res.status(200).json({
