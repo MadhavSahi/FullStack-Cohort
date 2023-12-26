@@ -1,12 +1,11 @@
 const mongoose=require("mongoose");
-const { string } = require("zod");
 
 mongoose.connect("mongodb+srv://madhavsahi16:Dta7cKlJmv0ZXSx7@madhavsahi-cohort02.pxcwixs.mongodb.net/user_first_db")
 //in the end we need to give database name :- user_first_db
 // mongoose.connect("mongodb+srv://madhavsahi16:Dta7cKlJmv0ZXSx7@madhavsahi-cohort02.pxcwixs.mongodb.net/")
 
 const User=mongoose.model('table_01',{username:String,email:String,password:String});
-//Users is table name
+//Users or table_01 is table name
 
 const user_01=new User({
     username:"Hey1",
