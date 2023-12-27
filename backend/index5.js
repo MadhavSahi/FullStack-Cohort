@@ -26,12 +26,17 @@ app.post("/signup", async (req, res) => {
     });
     //added return so that control will go out of this route after this statement..bcz we dont want to add
   }
-  const user = new User({
+  await User.create({
     name: username,
     email: email,
     password: password,
   });
-  user.save();
+  // const user = new User({
+  //   name: username,
+  //   email: email,
+  //   password: password,
+  // });
+  // user.save();
   res.status(200).json({
     msg: "New user saved successfully.",
   });
