@@ -5,6 +5,7 @@ const app = express();
 const port = 3000;
 app.use(express.json());
 
+//this is cluster string URL
 mongoose.connect(
   "mongodb+srv://madhavsahi16:Dta7cKlJmv0ZXSx7@madhavsahi-cohort02.pxcwixs.mongodb.net/user_first_db"
 );
