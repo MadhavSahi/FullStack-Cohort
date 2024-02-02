@@ -48,7 +48,7 @@ router.post("/courses", adminMW, async (req, res) => {
         msg: "This course already exists.",
       });
     } else {
-      const newCourse=await Course.create({
+      const newCourse = await Course.create({
         title: title,
         description: description,
         imageLink: imageLink,
@@ -56,7 +56,7 @@ router.post("/courses", adminMW, async (req, res) => {
       });
       return res.status(200).json({
         msg: "Course added successfully.",
-        courseId:newCourse._id,
+        courseId: newCourse._id,
       });
     }
   } catch (error) {
@@ -67,21 +67,41 @@ router.post("/courses", adminMW, async (req, res) => {
 // to see all courses on user screen.
 router.get("/courses", userMW, async (req, res) => {
   try {
-    await Course.find({});
+    const allCourses = await Course.find({});
+    // const allCourses2 = await allCourses.toArray();
     return res.status(200).json({
-      msg: "All courses.",
+      msg: "All Courses : ",
+      courses: allCourses,
     });
   } catch (error) {
     console.error("Error during MongoDB operation:", error);
   }
 });
 
-router.post("/courses/:courseId",userMW,async(req,res)=>{
-    try {
-        const courseId=req.params.courseId;
-        
-    } catch (error) {
-        console.error("Error during MongoDB operation:", error);
-    }
-})
+router.post("/courses/:courseId", userMW, async (req, res) => {
+  try {
+    const courseId = req.params.courseId;
+  } catch (error) {
+    console.error("Error during MongoDB operation:", error);
+  }
+});
+
+router.get("purchasedCourses", userMW, async (req, res) => {
+  const username = req.headers.username;
+  try {
+    const purchasedCoures = await User.findOne(
+      {
+        username: username,
+      },
+      {}
+    );
+    return res.status(200).send({
+      msg: "User's purchased courses :- ",
+      purchasedCoures,
+    });
+  } catch (error) {
+    console.error("Error during MongoDB operation:", error);
+  }
+});
+
 module.exports = router;

@@ -11,5 +11,5 @@ app.use("/user", userRouter);
 
 const PORT = 3000;
 app.listen(PORT, () => {
-  console.log("APP is working on PORT number " + PORT);
+  console.log("APP is working on PORT number : " + PORT);
 });

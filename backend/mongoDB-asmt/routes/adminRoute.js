@@ -68,7 +68,7 @@ router.get("/courses", adminMW, async (req, res) => {
   try {
     await Course.find({});
     return res.status(200).json({
-      msg: "All courses.",
+      msg: "All courses : ",
     });
   } catch (error) {
     console.error("Error during MongoDB operation:", error);

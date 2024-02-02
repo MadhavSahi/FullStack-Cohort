@@ -10,7 +10,7 @@ const AdminSchema = new mongoose.Schema({
 const UserSchema = new mongoose.Schema({
   username: String,
   password: String,
-  //when we want to add some other table inside aother table, we use thi syntax...like we want to have a PurchasedCourse table, but dont want to make different table bcz we think that we can interlink it through other tables, then we can use the below syntax to have it.
+  //when we want to add some other table inside aother table, we use this syntax...like we want to have a PurchasedCourse table, but dont want to make different table bcz we think that we can interlink it through other tables, then we can use the below syntax to have it.
   purchasedCourses: [
     {
       type: mongoose.Schema.Types.ObjectId,
