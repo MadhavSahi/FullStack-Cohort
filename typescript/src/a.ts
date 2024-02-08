@@ -11,12 +11,18 @@ function sum(a: number, b: number): number {
 }
 
 let x = sum(1, 2); //type inference
-console.log(x);
+// console.log(x);
 
-function RunAfter1Second(fxn: () => void):void {
+function RunAfter1Second(fxn: () => void): void {
   setTimeout(fxn, 1000);
 }
 
-RunAfter1Second(function () {
-  console.log("hey there ");
-});
+// RunAfter1Second(function () {
+//   console.log("hey there ");
+// });
+type Input = string | number;
+function fxn(arr: Input[]): Input {
+  return arr[0];
+}
+const value:Input = fxn(["hey", "hey2",1,2]);
+// console.log(value.toUpperCase());
