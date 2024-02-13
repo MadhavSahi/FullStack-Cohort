@@ -19,7 +19,7 @@ async function createUsersTable() {
     `);
     console.log(result);
   } catch (error) {
-    console.error("Error creating users table:", error);
+    console.error("Error creating users table: ", error);
   } finally {
     await client.end();
   }
