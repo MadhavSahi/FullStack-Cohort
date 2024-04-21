@@ -28,7 +28,7 @@ router.post("/signup", async (req, res) => {
       });
     }
   } catch (error) {
-    console.error("Error during MongoDB operation:", error);
+    console.error("Error during this MongoDB operation:", error);
   }
 });
 
