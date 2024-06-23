@@ -14,7 +14,7 @@ import Buttons from "./Buttons";
 import IsEven from "./IsEven";
 
 function App() {
-  // const [count, setCount] = useState(0);
+  const [count, setCount] = useState(0);
 
   return (
     <>
