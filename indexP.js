@@ -6,7 +6,7 @@ const func2 = () => {
   let a = 1;
   console.log(a);
 };
-let x = 1;
+let x = 1000;
 let y = x;
 // console.log(x===y);
 const func3 = func1;
