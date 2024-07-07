@@ -11,7 +11,7 @@ function sum(a: number, b: number): number {
 }
 
 let x = sum(1, 2); //type inference
-// console.log(x);
+console.log(x);
 
 function RunAfter1Second(fxn: () => void): void {
   setTimeout(fxn, 1000);
