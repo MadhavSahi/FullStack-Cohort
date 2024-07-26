@@ -20,7 +20,7 @@ const obj2 = {
   key2: 2,
 };
 const obj3 = obj1;
-// console.log(obj1==obj3);
+console.log(obj1==obj3);
 
 const array1 = [1, 2, 3, 4, 5, 6];
 
