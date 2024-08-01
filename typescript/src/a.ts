@@ -1,5 +1,5 @@
-// let x:number=10;
-// console.log(x);
+let x:number=10;
+console.log(x);
 
 // function abc(namew:string){
 //     console.log("hello "+namew);
