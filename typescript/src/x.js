@@ -7,7 +7,7 @@ const p = new Promise((resolve, reject) => {
 });
 async function asyncFxn() {
   console.log("hey1");
-  const a = 10;
+  const a = 1111;
   console.log(a);
   console.log("pre1");
   console.log("pre2");
