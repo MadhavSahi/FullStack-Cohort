@@ -13,7 +13,7 @@ const userMW = async (req, res, next) => {
     next();
   } else {
     return res.status(403).json({
-      msg: "User doesn't exist in DB.",
+      msg: "User doesn't exist in the DB.",
     });
   }
 };
