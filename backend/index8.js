@@ -9,6 +9,6 @@ function abc() {
 }
 
 
-const word="helloworld";
+const word="helloworld123";
 const word2=word.split('').sort().join('');
 console.log(word2);
