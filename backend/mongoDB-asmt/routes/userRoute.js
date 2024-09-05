@@ -16,7 +16,7 @@ router.post("/signup", async (req, res) => {
     });
     if (isAlreadyUser) {
       return res.status(403).json({
-        msg: "This username already exist in the User DB.",
+        msg: "This username already exists in the User DB.",
       });
     } else {
       await User.create({
