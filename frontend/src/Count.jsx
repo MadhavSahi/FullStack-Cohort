@@ -8,7 +8,7 @@ const Count = () => {
   console.log("hey count");
   return (
     <>
-      <div>Counter value is :- {count}</div>
+      <div>Counter value is:- {count}</div>
       <br />
       {/* <div>
         <Buttons />
