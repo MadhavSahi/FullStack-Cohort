@@ -9,8 +9,8 @@ const myschema=zod.array(zod.number());
 const response=myschema.safeParse(myArr);
 console.log(response.error);
 app.post("/home", (req, res) => {
-  //   const qp = req.query.q;
-  //   console.log(qp);
+  const qp = req.query.q;
+  console.log(qp);
   const id = req.body.id;
   const length = id[0].length;
   res.json({
