@@ -1,4 +1,4 @@
-// abc();
+abc();
 // abc2();
 const abc2 = () => {
   console.log("hey2");
