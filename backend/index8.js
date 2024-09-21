@@ -1,5 +1,5 @@
 abc();
-// abc2();
+abc2();
 const abc2 = () => {
   console.log("hey2");
 };
