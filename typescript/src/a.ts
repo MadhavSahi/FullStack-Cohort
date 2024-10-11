@@ -5,8 +5,8 @@ console.log(x);
 //     console.log("hello "+namew);
 
 // }
-abc("hey 'Madhav sahi");
-function sum(a: number, b: number): number {
+abc("hey 'Madhav Sahi");
+function sum(a: number , b: number): number {
   return a + b;
 }
 
