@@ -4,7 +4,7 @@ const bodyParser = require("body-parser");
 const app = express();
 const port = 3000;
 app.use(bodyParser.json());
-const myArr=[1,2,3,4,5,5];
+const myArr=[1,2,3,4,5];
 const myschema=zod.array(zod.number());
 const response=myschema.safeParse(myArr);
 console.log(response.error);
