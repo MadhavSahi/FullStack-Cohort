@@ -10,7 +10,7 @@ function sum(a: number , b: number): number {
   return a + b;
 }
 
-let x = sum(1, 2); //type inference
+let x = sum(1, 3); //type inference
 console.log(x);
 
 function RunAfter1Second(fxn: () => void): void {
