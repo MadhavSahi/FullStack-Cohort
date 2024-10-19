@@ -23,7 +23,7 @@ app.post("/signup", async (req, res) => {
   const existingUser = await User.findOne({ email: email });
   if (existingUser) {
     return res.status(400).json({
-      msg: "User already exists!",
+      msg: "User already exists !",
     });
     //added return so that control will go out of this route after this statement..bcz we dont want to add
   }
