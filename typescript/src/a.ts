@@ -1,4 +1,4 @@
-let x:number=10;
+let x:number=11;
 console.log(x);
 
 // function abc(namew:string){
