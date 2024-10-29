@@ -8,7 +8,7 @@ const User=mongoose.model('table_01',{username:String,email:String,password:Stri
 //Users or table_01 is table name
 
 const user_01=new User({
-    username:"Hey1",
+    username:"Hey5",
     email:"hey1@gmail.com",
     password:"hey1",
 })
