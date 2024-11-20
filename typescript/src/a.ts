@@ -5,7 +5,7 @@ console.log(x);
 //     console.log("hello "+namew);
 
 // }
-abc("hey 'Madhav Sahi");
+abc("Hi 'Madhav Sahi");
 function sum(a: number , b: number): number {
   return a + b;
 }
