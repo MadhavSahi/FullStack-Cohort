@@ -1,2 +1,2 @@
-let x1:number=1000
+let x1:number=100
 console.log(x1);
