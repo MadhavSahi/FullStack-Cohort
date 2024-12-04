@@ -15,7 +15,7 @@ async function asyncFxn() {
   console.log(ans);
   console.log("hey4");
   console.log("hey5");
-  console.log("hey6");
+  console.log("hey06");
 }
 
 console.log("hey2");
